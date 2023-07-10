@@ -7,13 +7,13 @@ export default function Example() {
     <div className="absolute">
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex w-[510px] h-[52px] justify-center rounded-md bg-transparent] bg-opacity-20 px-4 py-2 font-medium text-[rgba(82,101,235,1)] hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 text-lg focus:outline-[rgba(82,101,235,1)] focus:shadow-outline hover:border-[rgba(82,101,235,1)] border-2 border-[rgba(82,101,235,1)]">
+          <Menu.Button className="inline-flex w-[510px] h-[52px] justify-center rounded-md bg-transparent] bg-opacity-20 px-4 py-2 font-medium text-[#5265EB] hover:text-black hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 text-lg focus:shadow-outline hover:border-black border-2 border-[#5265EB]">
             <p className='py-1'>
             Select Presiding Judge
             </p>
 
             <ChevronDownIcon
-              className="ml-2 -mr-1 h-8 w-10 text-[rgba(82,101,235,1)] hover:text-black"
+              className="ml-2 -mr-1 h-8 w-10 text-[#5265EB] hover:text-black"
               aria-hidden="true"
             />
           </Menu.Button>
@@ -27,13 +27,13 @@ export default function Example() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-0 mt-2 w-[510px] origin-top-right divide-y divide-[rgba(82,101,235,1)] rounded-md bg-white shadow-lg ring-1 ring-[rgba(82,101,235,1)] ring-opacity-5 focus:outline-[rgba(82,101,235,1)] z-40 focus:-[rgba(82,101,235,1)]">
+          <Menu.Items className="absolute right-0 mt-2 w-[510px] origin-top-right divide-y divide-[#5265EB] rounded-md bg-white shadow-lg ring-1 ring-[#5265EB] ring-opacity-5 focus:outline-[#5265EB] z-40 focus:-[rgba(82,101,235,1)]">
             <div className="px-1 py-1 ">
               <Menu.Item>
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-[rgba(82,101,235,1)] text-white' : 'text-gray-900'
+                      active ? 'bg-[#5265EB] text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     His Lordship Justice Anin Yeboah - Chief Justice
@@ -44,7 +44,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-[rgba(82,101,235,1)] text-white' : 'text-gray-900'
+                      active ? 'bg-[#5265EB] text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     His Lordship Justice Jones Dotse
@@ -57,7 +57,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-[rgba(82,101,235,1)] text-white' : 'text-gray-900'
+                      active ? 'bg-[#5265EB] text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     His Lordship Justice Paul Baffoe Bonnie
@@ -68,7 +68,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-[rgba(82,101,235,1)] text-white' : 'text-gray-900'
+                      active ? 'bg-[#5265EB] text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     His Lordship Justice Gabriel Pwamang
@@ -81,7 +81,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-[rgba(82,101,235,1)] text-white' : 'text-gray-900'
+                      active ? 'bg-[#5265EB] text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     His Lordship Justice Nene Abayaateye Ofoe Amegatcher
@@ -94,7 +94,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                      active ? 'bg-[#5265EB] text-white' : 'text-gray-900'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     Her Ladyship Justice Mariama Owusu
