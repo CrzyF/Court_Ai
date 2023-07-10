@@ -20,10 +20,10 @@ export default function NewCase(props: NewCaseProps) {
 
   return (
     <div
-      className={`relative bg-white text-left w-[1512px] h-[982px] overflow-clip font-['Roboto']`}
+      className={`relative bg-white text-left w-screen h-screen overflow-clip font-['Roboto']`}
       style={props.style}
     >
-      <div className="absolute bg-white w-[567px] h-[848px] left-[473px] top-[67px] drop-shadow-lg rounded-[10px]" />
+      <div className="absolute bg-white w-[567px] h-[848px] left-[443px] top-[67px] drop-shadow-lg rounded-[10px]" />
       <div className="absolute left-[33.13%] right-[33.13%] top-[10.29%] bottom-[10.39%]">
         <div className="text-black font-normal">
           <p className="absolute m-0 left-[29.02%] right-[29.02%] h-[27px] w-[214px] top-[-1.8%] bottom-[98.33%] text-[38.54px] leading-[35.18446350097656px]">
@@ -56,30 +56,30 @@ export default function NewCase(props: NewCaseProps) {
 
         <div className="text-white font-medium">
           <div className="inset-x-0 absolute bottom-0 top-[93.32%] rounded-[3px]">
-            <div className="relative gap-2 w-[510px] h-[52px] bg-[rgba(82,101,235,1)] overflow-clip [box-shadow:0px_0px_0px_1px_rgba(82,_101,_235,_1)_inset] [box-shadow-width:1px] rounded-md">
-              <p className="top-4 absolute leading-5 m-0 left-[178px] text-[25px]">
-              <Link href="Records">Proceed</Link>
+            <div className="relative gap-2 w-[510px] h-[52px] bg-[#5265EB] overflow-clip rounded-md">
+              <p className="top-4 absolute leading-5 m-0 left-[40%] text-[25px]">
+              <Link href="courtsession">Proceed</Link>
               </p>
             </div>
           </div>
         </div>
       </div>
       <p className="absolute font-normal text-black inline m-0 h-[27px] w-[76px] left-[7.41%] right-[87.57%] top-[8.76%] bottom-[88.49%] text-[29.54px] leading-[35.18446350097656px]">
-      <Link href="SignIn">Back</Link>
+      <Link href="courtsession">Back</Link>
       </p>
 
       <button className="absolute font-normal text-black inline m-0 h-[27px] w-[76px] left-[3.41%] right-[87.57%] top-[8.50%] bottom-[88.49%] text-[29.54px] leading-[35.18446350097656px">
-      <Link href="SignIn">
+      <Link href="courtsession">
       <FontAwesomeIcon icon={faArrowLeft} />
       </Link>
       </button>
 
-      <div className="absolute gap-1.5 font-bold  font-['Roboto'] text-[rgba(82,101,235,1)] transition-all left-[33%] top-[73.50%]  w-full h-[92px]">
+      <div className="absolute gap-1.5 font-bold  font-['Roboto'] text-black transition-all left-[33%] top-[73.50%]  w-full h-[92px]">
 
       {date}
       </div>
 
-      <div className="absolute gap-1.5 font-bold  font-['Roboto'] text-[rgba(82,101,235,1)] transition-all left-[63%] top-[73.50%]   w-full h-[92px]">
+      <div className="absolute gap-1.5 font-bold  font-['Roboto'] text-black transition-all left-[63%] top-[73.50%]   w-full h-[92px]">
       <Clock/>
       </div>
 
