@@ -28,7 +28,7 @@ const Textarea = () => {
   return (
 
     <div className={`flex h-full w-fit items-center justify-center`} >
-      <div className="flex h-full w-full justify-center bg-white pb-[29px]">
+      <div className="flex h-full w-full justify-center pb-[29px]">
         <div className="flex h-full w-full flex-col items-center justify-between gap-[21px]">
           <div className="h-0 w-full outline outline-0 outline-[#DCDCDC]" />
           <div className="flex items-center justify-between gap-[36px]">
