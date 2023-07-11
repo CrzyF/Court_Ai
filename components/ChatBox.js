@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicrophoneLines, faCirclePlay, faCircleStop } from '@fortawesome/free-solid-svg-icons'
 
 function ChatBox() {
+    
     const [messages, setMessages] = useState([])
 
     useEffect(() => {
@@ -94,35 +95,39 @@ function ChatBox() {
     </div>
 
     <div>
-    <div>
-    {hasRecognitionSupport ? (
-      <>
-        {isListening ? (
-          <div className="flex flex-col items-end">
-          <div className="chat-bubble">
-            <div className="chat-bubble__right h-fit w-fit rounded-l-[67px] rounded-tr-[25px] bg-[#00d15a] pl-5 pt-2 pb-[20px] text-[19.54px] leading-[35.18px] text-white pr-5">
-              <p className="user-message">Listening...</p>
-            </div>
-          </div>
-          </div>
-        ) : null}
 
-        {isListening !== null && (
-          <div className="flex flex-col items-end">
-          <div className="chat-bubble">
-            <div className="chat-bubble__right h-fit w-fit rounded-l-[67px] rounded-tr-[25px] bg-[#00d15a] pl-5 pt-2 pb-[20px] text-[19.54px] leading-[35.18px] text-white pr-5">
-              <p className="user-message">{text}</p>
-            </div>
-          </div>
-          </div>
-        )}
-      </>
-    ) : (
-      <h1>Oops... looks like your browser does not support Voice Recognition</h1>
-    )}
-  </div>
+    {isListening ? (
+  <div className="flex flex-col items-end">
+      <div className="flex flex-col">
+        <div className="flex items-start mb-2">
+          <div className="chat-bubble bg-[#00d15a] text-white rounded-l-[67px] rounded-tr-[25px] py-[10px] px-[15px]">
+        <p className="user-message text-[16px]">listening...</p>
+      </div>
+    </div>
+    <div className="flex justify-end text-[12px] text-gray-500">
+      <img src="https://uortjlczjmucmpaqqhqm.supabase.co/storage/v1/object/public/firejet-converted-images/images/7b1e845e5e371594385e612c622869353a4556b8.webp" alt="Sender" className="w-8 h-6 rounded-full mr-1" />
     </div>
   </div>
+  </div>
+
+     ) : text ? (
+  <div className="flex flex-col items-end">
+  <div className="flex flex-col">
+        <div className="flex items-start mb-2">
+          <div className="chat-bubble bg-[#00d15a] text-white rounded-l-[67px] rounded-tr-[25px] py-[10px] px-[15px]">
+        <p className="user-message text-[16px]">{text}</p>
+      </div>
+    </div>
+    <div className="flex justify-end text-[12px] text-gray-500">
+      <img src="https://uortjlczjmucmpaqqhqm.supabase.co/storage/v1/object/public/firejet-converted-images/images/7b1e845e5e371594385e612c622869353a4556b8.webp" alt="Sender" className="w-8 h-6 rounded-full mr-1" />
+    </div>
+  </div>
+  </div>
+     ) : null}
+
+    </div>
+  </div>
+  
 </div>
 
         
