@@ -21,8 +21,9 @@ function Login() {
     }
 
   return (
+    <div className="bg-cover bg-center h-screen w-screen" style={{ backgroundImage: `url('https://citinewsroom.com/wp-content/uploads/2022/12/supreme-court-1140x570.jpg')` }}>
     <div
-      className={`relative bg-white text-left w-[1512px] h-screen overflow-clip font-['Roboto'] sclae-75`}
+      className={`relative text-left w-[1512px] h-screen overflow-clip font-['Roboto']`}
     >
       <div className="h-52 absolute w-[250px] left-[631px] top-[2%] [background:url(https://uortjlczjmucmpaqqhqm.supabase.co/storage/v1/object/public/firejet-converted-images/images/2e55d058ee7b92bb1b8524d3222aa61e376f9bff.webp)_center_/_cover]" />
       <div className="absolute bg-white w-[567px] h-[351px] left-[472px] top-[342px] drop-shadow-lg rounded-[10px]" />
@@ -49,11 +50,12 @@ function Login() {
       </button>
       </form>
 
-      <p className="absolute font-normal text-black inline m-0 h-[27px] w-[299px] left-[40.15%] right-[40.08%] top-[29.84%] bottom-[67.41%] text-[21.13px] leading-[35.18446350097656px]">
+      <p className="absolute font-bold text-black inline m-0 h-[27px] w-[309px] left-[40.15%] right-[40.08%] top-[29.84%] bottom-[67.41%] text-[21.13px] leading-[35.18446350097656px] bg-white rounded-[5px] pl-2 pr-2 bg-opacity-[0.5]">
         JUDICIAL SERVICE OF GHANA
       </p>
 
 
+    </div>
     </div>
   );
 }
